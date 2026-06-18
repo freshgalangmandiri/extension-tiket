@@ -1,0 +1,50 @@
+{
+	"manifest_version": 3,
+	"name": "Konfirmasi",
+	"version": "0.0.1",
+	"offline_enabled": true,
+	"content_scripts": [
+		{
+			"matches": [
+				"*://booking2.airasia.com/*",
+				"*://booking.xpressair.co.id/EA/EATicket.aspx*",
+				"*://booking.xpressair.co.id/EA/DirectPaymentEA.aspx*",
+				"*://agent.lionair.co.id/*",
+				"*://secure2.lionair.co.id/lionairpnr/DisplayBooking.aspx",
+				"*://agent.lionair.co.id/LionAgentsOPS/Confirmation.aspx",
+				"*://agent.lionair.co.id/LionAirAgentsPortal/Agents/BookingDetails.aspx*",
+				"*://agent.lionair.co.id/LionAgentsOPS/TicketBooking.aspx?*",
+				"*://book.citilink.co.id/Itinerary.aspx",
+				"*://book.citilink.co.id/Passenger.aspx",
+				"*://book.citilink.co.id/AgencyItinerary.aspx",
+				"*://sriwijaya-b2b.nieve.id/SJ-Eticket/application/?action=CheckBCode*",
+				"*://login.velosita.com/sistem-agen/transaksi-tiket-pesawat-*/detail?*",
+				"*://login.velosita.com/sistem-agen/transaksi-tiket-kereta-*/detail?*",
+				"*://agent.lionair.co.id/LionAirAgentsIBE/OnlineBooking.aspx",
+				"*://booking.kai.id/payment",
+				"*://pabriktiket.com/ViewTransaction/*",
+				"*://www.pabriktiket.com/ViewTransaction/*",
+				"file:///C:/Users/PROG1/Downloads/citilink*",
+				"file:///C:/Users/PROG1/Downloads/LION%20AIR%20-%20We%20Make%20People%20Fly.html",
+				"file:///home/programmer/Downloads/citilink.co.id.html"
+			],
+			"js": [
+				"jquery.js",
+				"function.js",
+				"transport/citilink.js",
+				"transport/pabriktiket.js",
+				"transport/lion.js",
+				"transport/sriwijaya.js",
+				"transport/velosita.js",
+				"transport/kai.js",
+				"js.js"
+			],
+			"run_at": "document_idle",
+			"all_frames": false
+		}
+	],
+	"icons": {
+		"48": "icon.png",
+		"128": "icon.png"
+	}
+}
