@@ -68,7 +68,7 @@ sriwijaya = () => {
     .trim()
     .split(" ")
     .at(-1);
-  //====== Harga
+  //====== Harga old
   // var nt = qsa(".pnrPaymentDetail th.fareTotal")
   //   .Contains("TOTAL")
   //   .Next.Text.replace(/(IDR|,)/g, "")
